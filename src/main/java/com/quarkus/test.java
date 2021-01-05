@@ -11,10 +11,10 @@ import javax.ws.rs.core.MediaType;
 @Path("/test")
 public class test {
 
-    JSONObject obj = new JSONObject().put("nome","teste");
+    JSONObject obj = new JSONObject().put("1","teste");
 
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public String getTest(){return obj.toString();}
 }
